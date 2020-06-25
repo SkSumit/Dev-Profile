@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+// 1. Import the initial variables
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+
+//Gloabl
+$body-background-color: #222b45;
+$body-color: #ffffff;
+
+$family-sans-serif: "Muli", "Arial", sans-serif;
+$title-color: #ffffff;
+$subtitle-color: #ffffff;
+$size-6: 1rem;
+$primary: #222b45;
+
+//Custom Override
+
+//NAVBAR
+$navbar-background-color: #212a43;
+$navbar-box-shadow-color: rgba(0, 0, 0, 0.25);
+$navbar-box-shadow-size: 0px 4px 4px;
+$navbar-height: 6rem;
+$navbar-padding-horizontal: 6.75rem;
+$navbar-item-color: #ffffff;
+.line {
+  border-right: 1px solid #ffffff;
+  height: 1.5rem;
+  padding-right: 0.75rem;
+}
+
+//BUTTONS
+$button-padding-horizontal: 5rem;
+button.is-rounded.is-medium {
+  width: 9rem;
+  border-radius: 20px;
+  box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.25);
+}
+button.is-rounded.is-medium.is-blue {
+  background-color: #0676ed;
+}
+button.is-rounded.is-medium.is-voilet {
+  background-color: #192038;
+  border-color: transparent;
+  color: white;
+}
+
+//BOX
+$box-background-color: #151a30;
+$box-color: white;
+$box-radius: 20px;
+$box-shadow: 12px 8px 24px rgba(0, 0, 0, 0.298214);
+
+.profile {
+  color: white !important;
+  border-radius: 0px !important;
+  box-shadow: none !important;
+  transition: width 0.5s ease;
+}
+
+.profile.is-4 {
+  background-color: #1a1f38;
+}
+.profile.is-8 {
+  @media (max-width: $tablet) {
+    border-right: none;
+  }
+  border-right: 2px solid #2e3a59;
+}
+.is-bottom {
+  border-top: 2px solid #2e3a59;
+}
+
+//PROGRESS BAR
+$progress-value-background-color: #0676ed;
+$progress-bar-background-color: #2e3a59;
+.progress::-webkit-progress-value,
+.hi {
+  transition: width 0.5s ease;
+}
+
+//INPUT
+$input-color: #808ba3;
+$input-background-color: #192038;
+$input-border-color: #8f9bb3;
+.input,
+.textarea,
+.select select {
+  border-color: transparent !important;
+}
+
+//FOOTER
+$footer-background-color: #222b45;
+$footer-color: white;
+$footer-padding: 3rem 1.5rem 1rem;
+.footer {
+  font-size: 13px;
+}
+
+// SWITCH
+$switch-background: #7072e6;
+$switch-background-active: #374148;
+#switchRoundedDefault {
+  width: fit-content;
+}
+
+.tile.is-ancestor.is-12 .field {
+  @media (max-width: $tablet) {
+    margin: 1rem 0rem;
+  }
+  margin-left: 2rem;
+  input {
+    width: 392px;
+  }
+}
+
+// 4. Import the rest of Bulma
+
+@import "../node_modules/bulma/bulma";
+@import "../node_modules/bulma-switch/dist/css/bulma-switch";
+
+// bulma-start\node_modules\bulma-switch\dist\css\bulma-switch.sass
