@@ -12,6 +12,8 @@ $title-color: #ffffff;
 $subtitle-color: #ffffff;
 $size-6: 1rem;
 $primary: #222b45;
+$success : #4DA59D;
+$green: #4DA59D;
 
 //Custom Override
 
@@ -103,6 +105,8 @@ $switch-background-active: #374148;
   width: fit-content;
 }
 
+$tooltip-background-color:$success;
+
 .tile.is-ancestor.is-12 .field {
   @media (max-width: $tablet) {
     margin: 1rem 0rem;
@@ -117,5 +121,6 @@ $switch-background-active: #374148;
 
 @import "../node_modules/bulma/bulma";
 @import "../node_modules/bulma-switch/dist/css/bulma-switch";
+@import'../node_modules/@creativebulma/bulma-tooltip/dist/bulma-tooltip.css'
 
 // bulma-start\node_modules\bulma-switch\dist\css\bulma-switch.sass

@@ -69,8 +69,8 @@
   },
   "version": "0.0.4",
   "dependencies": {
+    "@creativebulma/bulma-tooltip": "^1.2.0",
     "animate.css": "^4.1.0",
     "bulma-switch": "^2.0.0"
-    
   }
 }
