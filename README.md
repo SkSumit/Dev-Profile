@@ -1,7 +1,8 @@
 # Sumit Kolpekwar
 
 ## [Video Demonstration]
-   in `Dev Profile -Demo` 
+   in `Dev Profile -Demo` .
+   
    Video did not capture dropdown options.
 
 ## What's included
@@ -48,7 +49,7 @@ Wrote CSS to $HOME/projects/start-with-bulma/css/main.css
 
 ## Built With
 
-* [Bulma](bulma.io) - The CSS framework used
+* [Bulma](bulma.io) 
 
 
 ## Why Bulma?
@@ -56,6 +57,8 @@ Wrote CSS to $HOME/projects/start-with-bulma/css/main.css
 * Modular, component-rich, compatible and easy to use 
 * CSS only, no excessive JQuery and keeps the files lite.
 * Responsive and well-documented
+
+## Approx Time for completion is 15 hrs.
 
 
 
