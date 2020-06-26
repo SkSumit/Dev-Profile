@@ -49,7 +49,7 @@ Wrote CSS to $HOME/projects/start-with-bulma/css/main.css
 
 ## Built With
 
-* [Bulma](bulma.io) 
+* [Bulma](https://bulma.io/) 
 
 
 ## Why Bulma?

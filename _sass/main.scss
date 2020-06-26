@@ -4,28 +4,58 @@
 @import "../node_modules/bulma/sass/utilities/initial-variables";
 
 //Gloabl
-$body-background-color: #222b45;
-$body-color: #ffffff;
+
+
 
 $family-sans-serif: "Muli", "Arial", sans-serif;
-$title-color: #ffffff;
-$subtitle-color: #ffffff;
+
 $size-6: 1rem;
-$primary: #222b45;
+// $primary: #222b45;
 $success : #4DA59D;
 $green: #4DA59D;
+
+:root {
+  --bgcolor: #222b45;
+  --txtcolor: #ffffff;
+  --navbarbg:#212a43;
+  --boxbg: #151a30;
+  --boxcolor: white;
+  --inputbg: #192038;
+  --inputcolor: #808ba3;
+  --inputborder: #8f9bb3;
+  
+
+}
+
+[data-theme="dark"] {
+  --bgcolor: #EDF5FC; 
+  --navbarbg:#FAFCFD;
+  --txtcolor: #101426;
+  --boxbg:  #FAFCFD;
+  --boxcolor: #101426;
+  --inputbg: #FAFCFD;
+  --inputcolor: #101426;
+  --inputborder: #101426;
+
+
+}
+
+$body-background-color: var(--bgcolor);
+$body-color:var(--txtcolor);
+$title-color: var(--txtcolor);
+$subtitle-color: var(--txtcolor);
 
 //Custom Override
 
 //NAVBAR
-$navbar-background-color: #212a43;
+$navbar-background-color: var(--navbarbg);
 $navbar-box-shadow-color: rgba(0, 0, 0, 0.25);
 $navbar-box-shadow-size: 0px 4px 4px;
 $navbar-height: 6rem;
 $navbar-padding-horizontal: 6.75rem;
-$navbar-item-color: #ffffff;
+$navbar-item-color: var(--txtcolor);
 .line {
-  border-right: 1px solid #ffffff;
+  border-right: 1px solid var(--txtcolor);
   height: 1.5rem;
   padding-right: 0.75rem;
 }
@@ -47,20 +77,20 @@ button.is-rounded.is-medium.is-voilet {
 }
 
 //BOX
-$box-background-color: #151a30;
-$box-color: white;
+$box-background-color: var(--boxbg);
+$box-color:  var(--boxcolor);
 $box-radius: 20px;
 $box-shadow: 12px 8px 24px rgba(0, 0, 0, 0.298214);
 
 .profile {
-  color: white !important;
+  color: var(--txtcolor);
   border-radius: 0px !important;
   box-shadow: none !important;
   transition: width 0.5s ease;
 }
 
 .profile.is-4 {
-  background-color: #1a1f38;
+  background-color: var(--bgcolor)
 }
 .profile.is-8 {
   @media (max-width: $tablet) {
@@ -81,9 +111,9 @@ $progress-bar-background-color: #2e3a59;
 }
 
 //INPUT
-$input-color: #808ba3;
-$input-background-color: #192038;
-$input-border-color: #8f9bb3;
+$input-color: var(--inputcolor);
+$input-background-color: var(--inputbg);
+$input-border-color:var(--inputborder);
 .input,
 .textarea,
 .select select {
@@ -91,8 +121,8 @@ $input-border-color: #8f9bb3;
 }
 
 //FOOTER
-$footer-background-color: #222b45;
-$footer-color: white;
+$footer-background-color:var(--bgcolor);
+$footer-color: var(--txtcolor);
 $footer-padding: 3rem 1.5rem 1rem;
 .footer {
   font-size: 13px;
@@ -105,7 +135,13 @@ $switch-background-active: #374148;
   width: fit-content;
 }
 
-$tooltip-background-color:$success;
+// //tooltip
+$tooltip-background-color:red;
+.has-tooltip-arrow{
+  border-bottom: none !important;
+}
+
+
 
 .tile.is-ancestor.is-12 .field {
   @media (max-width: $tablet) {
@@ -121,6 +157,6 @@ $tooltip-background-color:$success;
 
 @import "../node_modules/bulma/bulma";
 @import "../node_modules/bulma-switch/dist/css/bulma-switch";
-@import'../node_modules/@creativebulma/bulma-tooltip/dist/bulma-tooltip.css'
+@import'../node_modules/@creativebulma/bulma-tooltip/dist/bulma-tooltip'
 
 // bulma-start\node_modules\bulma-switch\dist\css\bulma-switch.sass
